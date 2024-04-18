@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<Listeners>
+		<Listener class-name="SeleniumFrameworkDesign.testcompment.Listener"/>
+	</Listeners>
+	
+	<groups>
+		<run>
+			<include name="ErrorHlanding"/>
+		</run>
+	</groups>
+  <test thread-count="5" name="ErrorMessage">
+    <classes>
+      <class name="SeleniumFrameworkDesign.ErrorMessage"/>
+    </classes>
+  </test> <!-- Test -->
+  <!-- Test -->
+</suite> <!-- Suite -->
